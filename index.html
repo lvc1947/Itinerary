@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Satellite Multi-Mode Itinerary Planner</title>
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Sidebar UI -->
+  <div class="sidebar">
+    <h2>Plan Your Itinerary</h2>
+    <div id="itinerary-list"></div>
+
+    <div class="actions">
+      <button type="button" class="btn btn-add" id="add-stop-btn">+ Add Another Stop</button>
+      <button type="button" class="btn btn-search" id="calculate-btn">Calculate Full Route</button>
+    </div>
+
+    <div id="status-banner" class="status-banner"></div>
+  </div>
+
+  <div id="map"></div>
+
+  <!-- Leaflet JS Engine & Plugins -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/leaflet-textpath@1.2.0/leaflet.textpath.min.js"></script>
+
+  <!-- 통합된 Single JS 파일 -->
+  <script src="js/app.js"></script>
+</body>
+</html>
